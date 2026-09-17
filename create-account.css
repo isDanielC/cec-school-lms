@@ -1,0 +1,6 @@
+@import url("student.css");
+
+/* Create Account page-specific adjustments */
+.account-form {
+    max-width: 100%;
+}

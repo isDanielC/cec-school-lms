@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | CEC Student Portal</title>
+    <link rel="stylesheet" href="create-account.css">
+</head>
+<body>
+    <main class="student-login-page">
+        <section class="student-login-card" aria-labelledby="create-account-title">
+            <img src="cec-logo.png" alt="Cebu Eastern College logo" class="student-logo">
+            <h1 id="create-account-title">Create an account</h1>
+
+            <form class="account-form" action="#" method="post">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="account-password">Password</label>
+                <input type="password" id="account-password" name="password" required>
+
+                <label for="student-number">Student ID number</label>
+                <input type="text" id="student-number" name="student-number" required>
+
+                <label for="course">Course/Program</label>
+                <select id="course" name="course" required>
+                    <option value="" selected disabled>Select course/program</option>
+                    <option value="BSIT">Bachelor of Science in Information Technology (BSIT)</option>
+                    <option value="BSHM">Bachelor of Science in Hospitality Management (BSHM)</option>
+                    <option value="BSTM">Bachelor of Science in Tourism Management (BSTM)</option>
+                    <option value="BSED">Bachelor of Secondary Education (BSED)</option>
+                    <option value="BEED">Bachelor of Elementary Education (BEED)</option>
+                    <option value="BSCrim">Bachelor of Science in Criminology (BSCrim)</option>
+                </select>
+
+                <label for="year-level">Year level</label>
+                <select id="year-level" name="year-level" required>
+                    <option value="" selected disabled>Select year level</option>
+                    <option>First Year</option>
+                    <option>Second Year</option>
+                    <option>Third Year</option>
+                    <option>Fourth Year</option>
+                </select>
+
+                <button type="submit" class="login-button">Sign Up</button>
+            </form>
+
+            <p class="login-note">Already have an account? <a href="student.html">Log in</a></p>
+        </section>
+    </main>
+</body>
+</html>

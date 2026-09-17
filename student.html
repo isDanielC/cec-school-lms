@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal | Cebu Eastern College</title>
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="destination-page">
+    <main class="student-login-page">
+        <section class="student-login-card" aria-labelledby="student-login-title">
+            <img src="cec-logo.png" alt="Cebu Eastern College logo" class="student-logo">
+
+            <h1 id="student-login-title">CEC STUDENT PORTAL</h1>
+
+            <form action="student-dashboard.html" method="get">
+                <label for="student-id">Student ID</label>
+                <input type="text" id="student-id" name="student-id" placeholder="Enter Student ID" autocomplete="username" required>
+
+                <label for="student-password">Password</label>
+                <input type="password" id="student-password" name="password" placeholder="Enter password" autocomplete="current-password" required>
+
+                <div class="login-options">
+                    <label class="remember-option">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="password-recovery.html">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="login-button">LOG IN TO PORTAL</button>
+            </form>
+
+            <p class="login-note">Don't have an account? <a href="create-account.html">Sign Up</a></p>
+            <div class="divider"><span>OR SIGN IN WITH</span></div>
+
+            <button type="button" class="google-button">
+                <i class="fa-brands fa-google" aria-hidden="true"></i>
+                <span>Sign in with Google</span>
+            </button>
+
+            <a href="landing_page.html" class="back-link">Back to School Portal</a>
+        </section>
+    </main>
+</body>
+</html>
